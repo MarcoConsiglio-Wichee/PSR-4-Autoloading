@@ -1,3 +1,4 @@
+
 # PSR-4-Autoloading
 This is a PHP autoloader implementing the standard PSR-4
 
@@ -30,6 +31,11 @@ Now, you have to register the namespace. You can register more than one namespac
     // Create a new Ticket.
     $ticket = new CompanyName\Project\Ticket();
 Enjoy coding!
+
+## Compatibily issues
+### .class.php extension
+The `.class.php` extension is not PSR-4 compliant, and therfore can't autoload PHP classes with `.class.php` extension. If you feel comfortable to implement a workaround in order to make this autoloader compatible with `.class.php` classes, fork this repository and I will accept a pull request!
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
